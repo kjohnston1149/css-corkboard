@@ -41,6 +41,8 @@ h1 {
   top: 300px;
   left: 1000px;
   -webkit-transform: rotate(23deg);
+  // display: none;
+
 }
 
 .polaroid {
@@ -51,13 +53,13 @@ h1 {
 
 }
 
-.pin {
-  content: url('images/red-pin.png');
-  height: auto;
-  width: 100px;
-  position: absolute;
-
-}
+      // .pin {
+      //   content: url('images/red-pin.png');
+      //   height: auto;
+      //   width: 100px;
+      //   position: absolute;
+      //
+      // }
 
 .group-1::after {
   content: "";
@@ -77,6 +79,7 @@ h1 {
   background-image: url('/images/red-pin.png');
   background-position: center;
   background-size: cover;
+  filter:hue-rotate(200deg);
 }
 
 .group-3::after {
@@ -87,7 +90,18 @@ h1 {
   background-image: url('/images/red-pin.png');
   background-position: center;
   background-size: cover;
+  filter:hue-rotate(110deg);
 }
+
+// .group-n::after {
+//   content: "";
+//   height: 100px;
+//   width: 100px;
+//   position: absolute;
+//   background-image: url('/images/red-pin.png');
+//   background-position: center;
+//   background-size: cover;
+// }
 
 .picture {
   content: url("/images/brainbow1.jpg");
@@ -97,25 +111,9 @@ h1 {
   left: 40px;
   top: 50px;
   z-index: -1;
-  // filter:hue-rotate(180deg);
+  filter:hue-rotate(100deg);
 }
 
-.bluepin {
-  height: auto;
-  width: 100px;
-  position: absolute;
-  filter:hue-rotate(190deg);
-}
-
-.greenpin {
-  height: auto;
-  width: 100px;
-  position: absolute;
-  filter:hue-rotate(110deg);
-}
-
-// .group-3 +
-
-.yo, .picture {
-  filter:grayscale(90%);
+.group-1:hover ~ div .picture {
+  filter: grayscale(75%);
 }
