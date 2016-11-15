@@ -1,6 +1,56 @@
 $color: 	#d36154;
 
+*,
+*::before,
+*::after {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+            margin: 0;
+          }
+
+body {
+  background-image: url('/images/cork-board.jpg');
+  // background-position: center;
+  // background-size: cover;
+  // background-repeat: no-repeat;
+
+}
+
 h1 {
   color: $color;
   background-color: orange;
 }
+
+.decorations {
+  position: relative;
+  top: 100px;
+  left: 100px;
+}
+
+#polaroid {
+  width: 400px;
+  height: auto;
+  position: absolute;
+
+}
+
+#pin {
+  background-image: url("images/red-pin.png");
+  height: auto;
+  width: 10%;
+  position: absolute;
+  left: 195px;
+  top: 38px;
+}
+
+#brain-pic {
+  height: 300px;
+  width: 300;
+  position: absolute;
+  left: 50px;
+  top: 50px;
+  z-index: -1;
+}
+
+.decorations:after {}
