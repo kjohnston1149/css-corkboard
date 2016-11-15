@@ -22,35 +22,62 @@ h1 {
   background-color: orange;
 }
 
-.decorations {
+.group-1 {
   position: relative;
   top: 100px;
   left: 100px;
+  -webkit-transform: rotate(7deg);
 }
 
-#polaroid {
+.group-2 {
+  position: relative;
+  top: 500px;
+  left: 500px;
+  -webkit-transform: rotate(7deg);
+}
+
+.group-3 {
+  position: relative;
+  top: 250px;
+  left: 750px;
+  -webkit-transform: rotate(23deg);
+}
+
+.polaroid {
   width: 400px;
   height: auto;
   position: absolute;
 
 }
 
-#pin {
-  background-image: url("images/red-pin.png");
+.pin {
   height: auto;
-  width: 10%;
+  width: 100px;
   position: absolute;
-  left: 195px;
-  top: 38px;
+
 }
 
-#brain-pic {
+.picture {
   height: 300px;
   width: 300;
   position: absolute;
   left: 50px;
   top: 50px;
   z-index: -1;
+}
+
+.bluepin {
+  height: auto;
+  width: 100px;
+  position: absolute;
+  filter:hue-rotate(190deg);
+}
+
+.greenpin {
+  height: auto;
+  width: 100px;
+  position: absolute;
+  filter:hue-rotate(110deg);
 }
 
 .decorations:after {}
