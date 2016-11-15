@@ -23,21 +23,21 @@ h1 {
 }
 
 .group-1 {
-  position: absolute;
+  position: relative;
   top: 100px;
   left: 100px;
   -webkit-transform: rotate(7deg);
 }
 
 .group-2 {
-  position: absolute;
+  position: relative;
   top: 500px;
   left: 500px;
   -webkit-transform: rotate(-7deg);
 }
 
 .group-3 {
-  position: absolute;
+  position: relative;
   top: 300px;
   left: 1000px;
   -webkit-transform: rotate(23deg);
@@ -52,10 +52,41 @@ h1 {
 }
 
 .pin {
+  content: url('images/red-pin.png');
   height: auto;
   width: 100px;
   position: absolute;
 
+}
+
+.group-1::after {
+  content: "";
+  height: 100px;
+  width: 100px;
+  position: absolute;
+  background-image: url('/images/red-pin.png');
+  background-position: center;
+  background-size: cover;
+}
+
+.group-2::after {
+  content: "";
+  height: 100px;
+  width: 100px;
+  position: absolute;
+  background-image: url('/images/red-pin.png');
+  background-position: center;
+  background-size: cover;
+}
+
+.group-3::after {
+  content: "";
+  height: 100px;
+  width: 100px;
+  position: absolute;
+  background-image: url('/images/red-pin.png');
+  background-position: center;
+  background-size: cover;
 }
 
 .picture {
@@ -83,10 +114,8 @@ h1 {
   filter:hue-rotate(110deg);
 }
 
-.group-3 +
+// .group-3 +
 
-.grayed {
+.yo, .picture {
   filter:grayscale(90%);
 }
-
-.decorations:after {}
